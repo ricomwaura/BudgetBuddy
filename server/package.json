@@ -8,6 +8,10 @@
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricomwaura/BudgetBuddy.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

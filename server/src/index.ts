@@ -36,7 +36,12 @@ if (cluster.isMaster) {
     app.use(express.json());
 
     app.get('/', (req, res) => {
-        return res.send(art);
+        return res.send({
+            message: "BudgetBuddy Server System is running.",
+            api: "BudgetBuddy",
+            environment: process.env.NODE_ENV || 'development',
+            timestamp: new Date()
+        });
     })
 
     const setupServer = async () => {
